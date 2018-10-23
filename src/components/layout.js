@@ -44,7 +44,11 @@ const Layout = ({ children }) => (
             },
           ]}
           link={[
-            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
+            {
+              rel: 'shortcut icon',
+              type: 'image/png',
+              href: `https://unbokeh.com${favicon}`,
+            },
           ]}
         >
           <html lang="en" />

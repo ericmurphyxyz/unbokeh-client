@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => (
       columnClassName="masonry-grid-column"
     >
       {data.allMetadataJson.edges.map(({ node }) => (
-        <a href={node.path.absolutePath} download>
+        <a href={node.path.publicURL} download>
           <MasonryItem>
             <MasonryAttribution className="masonry-attribution">
               <h6>
@@ -61,7 +61,7 @@ export const indexQuery = graphql`
           author
           attrUrl
           path {
-            absolutePath
+            publicURL
             childImageSharp {
               fluid(maxWidth: 415, quality: 100) {
                 ...GatsbyImageSharpFluid

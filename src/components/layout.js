@@ -40,14 +40,14 @@ const Layout = ({ children }) => (
             },
             {
               name: 'twitter:image',
-              content: twitterCard,
+              content: `https://unbokeh.com${twitterCard}`,
             },
           ]}
           link={[
             {
               rel: 'shortcut icon',
               type: 'image/png',
-              href: `https://unbokeh.com${favicon}`,
+              href: `${favicon}`,
             },
           ]}
         >

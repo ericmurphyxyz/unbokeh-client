@@ -87,7 +87,11 @@ const Header = () => (
             >
               Unsplash
             </a>{' '}
-            &amp; created by{' '}
+            &amp; free to use under the{' '}
+            <a target="_blank" href="https://unsplash.com/license">
+              Unsplash license
+            </a>
+            . Created by{' '}
             <a target="_blank" href="https://ericnmurphy.com/">
               Eric Murphy
             </a>

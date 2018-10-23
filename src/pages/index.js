@@ -17,6 +17,15 @@ const MasonryAttribution = styled.div`
   z-index: 9999;
 `
 
+const Footer = styled.footer`
+  text-align: center;
+  margin: 5rem 0 3rem;
+
+  span {
+    color: #bb6f6b;
+  }
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
     <Masonry
@@ -48,6 +57,13 @@ const IndexPage = ({ data }) => (
         </a>
       ))}
     </Masonry>
+    <Footer>
+      Made with <span>♥</span> by{' '}
+      <a target="_blank" href="https://ericnmurphy.com/">
+        Eric Murphy
+      </a>
+      .
+    </Footer>
   </Layout>
 )
 

@@ -9,19 +9,49 @@ const HeaderWrapper = styled.header`
   max-width: 1296px;
   padding: 2rem 1.0875rem 2rem;
   width: 100%;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
 `
 
 const ImageWrapper = styled.div`
   width: 25%;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1080px) {
+    margin: 0 2rem 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 50%;
+    margin: 0 auto 2rem;
+  }
 `
 
 const CopyWrapper = styled.div`
   width: 75%;
   padding: 1rem 4rem;
+
+  @media screen and (max-width: 1080px) {
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 `
 
 const HeaderImage = styled(Img)`
   border-radius: 43% 57% 41% 59% / 60% 41% 59% 40%;
+`
+
+const Small = styled.p`
+  font-size: 0.85em;
+  color: #aaa;
 `
 
 const Header = () => (
@@ -49,7 +79,7 @@ const Header = () => (
             wallpapers.
           </p>
           <p>Hand-picked with new photos every week.</p>
-          <p>
+          <Small>
             Sourced from{' '}
             <a
               target="_blank"
@@ -61,8 +91,10 @@ const Header = () => (
             <a target="_blank" href="https://ericnmurphy.com/">
               Eric Murphy
             </a>
-            .
-          </p>
+            . Want to advertise here? Get in touch at{' '}
+            <a href="mailto:hi@ericnmurphy.com">hi@ericnmurphy.com</a> and I'll
+            see if it's a good fit.
+          </Small>
         </CopyWrapper>
       </HeaderWrapper>
     )}
